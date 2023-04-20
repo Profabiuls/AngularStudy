@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<div class="hello">Sesso {{gender==='m'? 'Uomo':'Donna'}}</div>`,
+  styles: [`.hello { background-color : red }`]
 })
 export class AppComponent {
   title = 'myapp';
+  gender ='m';
 }
