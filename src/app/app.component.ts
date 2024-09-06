@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <button (click)="visible=!visible">invert</button>
+  <button class="hello" (click)="visible=!visible">invert</button>
   <button (click)="toggle()">toggle</button>
   <h1 *ngIf="visible"> Hello World</h1>
   <li
